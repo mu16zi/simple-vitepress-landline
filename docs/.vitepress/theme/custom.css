@@ -1,8 +1,8 @@
-:root {
-    --vp-font-family-base: "Rubik"
-    --vp-font-family-mono: "Rubik"
-} 
+* {
+  font-family: "Rubik" !important;
+  letter-spacing: 0 !important;
+}
 
-.VPHero .container > * { 
+.VPHero .container > * {
   text-align: start;
 }
