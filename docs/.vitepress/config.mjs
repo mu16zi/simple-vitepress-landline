@@ -3,10 +3,23 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "fa-IR",
-  lastUpdated: true,
   dir: "rtl",
-  title: "Code Challenge!",
-  description: "سری اول مسابقات الگوریتم و برنامه نویسی",
+  title: "ShahedPC",
+  description: "سری اول مسابقه الگوریتم و برنامه نویسی دانشگاه شاهد",
+  head: [
+    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+    [
+      "link",
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+    ],
+    [
+      "link",
+      {
+        href: "https://fonts.googleapis.com/css2?family=Rubik&display=swap",
+        rel: "stylesheet",
+      },
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -14,15 +27,9 @@ export default defineConfig({
       { text: "Examples", link: "/markdown-examples" },
     ],
 
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
+    // socialLinks: [
+    //   { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    // ],
 
     footer: {
       message:
@@ -30,13 +37,5 @@ export default defineConfig({
       copyright:
         'Copyright © 2019-present <a href="https://github.com/yyx990803">Evan You</a>',
     },
-
-    editLink: {
-      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
-    },
-
-    // socialLinks: [
-    // { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    // ],
   },
 });
